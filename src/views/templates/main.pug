@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href=require('/src/resources/scss/main.scss'))
+    title New Webpack Application
+  body
+    block site-content
+
+    .footer.section.section.dark
+      h1.on-dark Author
+      p.on-dark Alexandr Shamanin (@slpAkkie)
+      p.on-dark
+        a(href="//github.com/slpAkkie" target="_blank").underline.capitalize.text-sm.text-slate-400 GitHub profile
+
+    script(src=require('/src/resources/ts/main.ts'))

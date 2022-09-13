@@ -1,0 +1,17 @@
+.section {
+  @apply px-8 py-10 text-slate-600;
+
+  &_colored {
+    @apply bg-slate-300;
+  }
+
+  &.dark {
+    @apply bg-slate-800;
+  }
+}
+
+article {
+  & + & {
+    @apply mt-3;
+  }
+}

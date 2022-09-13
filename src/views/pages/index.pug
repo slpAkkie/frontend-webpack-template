@@ -1,0 +1,20 @@
+extends ../templates/main.pug
+
+block site-content
+  include ../components/welcome.pug
+
+  .section.about
+    h1 What you can use during development
+
+    article
+      h2.capitalize Major features
+      ul.list-disc.pl-5
+        li HTML preprocessor: Pug
+        li CSS preprocessor: Sass (Scss)
+        li JS preprocessor: TypeScript
+
+    article
+      h2.capitalize Additional packages:
+      ul.list-disc.pl-5
+        li Tailwind (already integrated with PostCSS)
+        li Bootstrap 5 (added as npm package)
