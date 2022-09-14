@@ -1,4 +1,3 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { glob } = require('glob')
 const path = require('path')
 const PugPlugin = require('pug-plugin')
@@ -20,12 +19,10 @@ module.exports = {
     path: path.join(__dirname, 'dist/'),
     publicPath: '/',
     filename: 'js/[name].[contenthash:8].js',
+    clean: true,
   },
 
   plugins: [
-    // Clean dist folder before build.
-    new CleanWebpackPlugin(),
-
     // Enable processing of Pug files defined in webpack entry.
     new PugPlugin({
       extractCss: {
