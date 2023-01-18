@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     // Enable processing of Pug files defined in webpack entry.
     new PugPlugin({
-      extractCss: {
+      css: {
         filename: 'css/[name].[contenthash:8].css',
       },
     }),
